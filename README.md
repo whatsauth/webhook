@@ -9,3 +9,6 @@ Pastikan sudah setting environment variabel pada GCF antara lain :
 
 ![image](https://github.com/whatsauth/webhook/assets/11188109/5ce519e9-c9ee-45aa-ad58-edd14a4c661d)
 
+Pastikan Entry Point sama dengan yang ada di init:
+
+![image](https://github.com/whatsauth/webhook/assets/11188109/21323f05-d32e-4fc8-91ba-7933644152ea)
