@@ -20,7 +20,7 @@ func WebHookPost(w http.ResponseWriter, r *http.Request) {
 	json.NewDecoder(r.Body).Decode(&msg)
 	if r.Header.Get("Secret") == os.Getenv("SECRET") {
 		dt := &TextMessage{
-			To:       "6285155476774",
+			To:       msg.Phone_number,
 			IsGroup:  false,
 			Messages: "Hai hai hai kak " + msg.Alias_name,
 		}
