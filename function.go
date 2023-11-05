@@ -26,8 +26,8 @@ func WebHookPost(w http.ResponseWriter, r *http.Request) {
 			IsGroup:  false,
 			Messages: "Hai hai hai kak " + msg.Alias_name,
 		}
-		resp, err = atapi.PostStructWithToken[Response]("Token", os.Getenv("TOKEN"), dt, "https://wa.my.id/send/message/text")
-		if err != nil {
+		resp, error := atapi.PostStructWithToken[Response]("Token", os.Getenv("TOKEN"), dt, "https://wa.my.id/send/message/text")
+		if error != "" {
 			resp.Response = "Error Request wa API " + err.Error()
 		}
 	} else {
