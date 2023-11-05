@@ -17,19 +17,14 @@ func init() {
 func WebHookPost(w http.ResponseWriter, r *http.Request) {
 	var msg WAMessage
 	var resp Response
-	err := json.NewDecoder(r.Body).Decode(&msg)
-	if err != nil {
-		resp.Response = "error parsing application/json: " + err.Error()
-	} else if r.Header.Get("Secret") == os.Getenv("SECRET") {
+	json.NewDecoder(r.Body).Decode(&msg)
+	if r.Header.Get("Secret") == os.Getenv("SECRET") {
 		dt := &TextMessage{
 			To:       "6285155476774",
 			IsGroup:  false,
 			Messages: "Hai hai hai kak " + msg.Alias_name,
 		}
-		resp, error := atapi.PostStructWithToken[Response]("Token", os.Getenv("TOKEN"), dt, "https://wa.my.id/send/message/text")
-		if error != "" {
-			resp.Response = "Error Request wa API " + err.Error()
-		}
+		atapi.PostStructWithToken[Response]("Token", os.Getenv("TOKEN"), dt, "https://wa.my.id/send/message/text")
 	} else {
 		resp.Response = "Secret Salah"
 	}
