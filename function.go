@@ -24,7 +24,7 @@ func WebHookPost(w http.ResponseWriter, r *http.Request) {
 			IsGroup:  false,
 			Messages: "Hai hai hai kak " + msg.Alias_name,
 		}
-		atapi.PostStructWithToken[Response]("Token", os.Getenv("TOKEN"), dt, "https://wa.my.id/send/message/text")
+		resp, _ = atapi.PostStructWithToken[Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/send/message/text")
 	} else {
 		resp.Response = "Secret Salah"
 	}
