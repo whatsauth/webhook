@@ -5,13 +5,11 @@ go 1.21.3
 require (
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
 	github.com/aiteung/atapi v0.0.17
-	github.com/aiteung/atmessage v0.1.0
 	github.com/aiteung/module v0.0.27
 )
 
 require (
 	filippo.io/edwards25519 v1.0.0 // indirect
-	github.com/aiteung/musik v0.0.5 // indirect
 	github.com/cloudevents/sdk-go/v2 v2.14.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
@@ -19,7 +17,6 @@ require (
 	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/json-iterator/go v1.1.10 // indirect
 	github.com/klauspost/compress v1.16.5 // indirect
-	github.com/mattn/go-sqlite3 v1.14.17 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
 	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 // indirect
 	github.com/montanaflynn/stats v0.7.1 // indirect
