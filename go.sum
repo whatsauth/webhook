@@ -606,10 +606,6 @@ github.com/GoogleCloudPlatform/functions-framework-go v1.8.0 h1:T6A2/y11ew21+jYV
 github.com/GoogleCloudPlatform/functions-framework-go v1.8.0/go.mod h1:KpD6tyJWaVnELorVNG+GgBxCNZSVnyWDIZOtibAfAH0=
 github.com/JohnCGriffin/overflow v0.0.0-20211019200055-46fa312c352c/go.mod h1:X0CRv0ky0k6m906ixxpzmDRLvX58TFUKS2eePweuyxk=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
-github.com/aiteung/atapi v0.0.17 h1:+jQ9rhtn+BA4RnFr9sZKzxM1ooLxDxUiKPAZ6PlI/NU=
-github.com/aiteung/atapi v0.0.17/go.mod h1:kGz2vwWxDL8wmXEdMIJDBOxYKcZ4b/QR8D0Hi49DQw4=
-github.com/aiteung/atapi v0.1.0 h1:D0zuYJWdbgLVIgO/E1dvsWxfzVGw/u6YtzfzBp07InM=
-github.com/aiteung/atapi v0.1.0/go.mod h1:kGz2vwWxDL8wmXEdMIJDBOxYKcZ4b/QR8D0Hi49DQw4=
 github.com/aiteung/atapi v0.1.1 h1:dJDCuOJ42ABugKWSeN86a6hc1XLVKU7uA7lQD8VmT84=
 github.com/aiteung/atapi v0.1.1/go.mod h1:kGz2vwWxDL8wmXEdMIJDBOxYKcZ4b/QR8D0Hi49DQw4=
 github.com/ajstarks/deck v0.0.0-20200831202436-30c9fc6549a9/go.mod h1:JynElWSGnm/4RlzPXRlREEwqTHAN3T56Bv2ITsFT3gY=
