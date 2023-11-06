@@ -1,6 +1,11 @@
 # PHP Hosting
 
-Untuk yang menggunakan PHP di web hosting bisa memakai contoh kode [berikut](index.php)
+Untuk yang menggunakan PHP di web hosting bisa memakai contoh kode [berikut](index.php).
+Hal yang pertama dilakukan adalah, pastikan hosting anda tidak memblokir domain atau ip dari alamat api.wa.my.id
+Cara pengecekan bisa lewat SSH dari hosting, contoh jika hosting memblokir alamat api wa maka akan seperti ini:  
+![image](https://github.com/whatsauth/webhook/assets/11188109/6c58afed-d8aa-4fa6-a1d4-a35a27ed7e6c)  
+atau bisa juga ketika melakukan test menggunakan postman ke webhook di hosting, akan terasa lama dan muncul keterangan seperti ini:  
+![image](https://github.com/whatsauth/webhook/assets/11188109/17676d2d-b1b3-4b54-ad99-4c9637f8b6fa)
 
 ## Langkah langkah
 Buka Cpanel dan masuk ke File Manager buat folder baru bernama webhook di dalam public_html  
