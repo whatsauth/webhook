@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	"strings"
 
 	"github.com/aiteung/atapi"
 	"github.com/aiteung/atmessage"
@@ -20,9 +19,9 @@ func Post(w http.ResponseWriter, r *http.Request) {
 	var resp atmessage.Response
 	json.NewDecoder(r.Body).Decode(&msg)
 	if r.Header.Get("Secret") == os.Getenv("SECRET") {
-		if strings.Contains(msg.Message, WAKeyword) && msg.From_link { //untuk whatsauth request login
+		if ws.IsLoginRequest(msg, WAKeyword) { //untuk whatsauth request login
 			dt := &ws.WhatsauthRequest{
-				Uuid:        strings.Replace(msg.Message, WAKeyword, "", 1),
+				Uuid:        ws.GetUUID(msg, WAKeyword),
 				Phonenumber: msg.Phone_number,
 				Delay:       msg.From_link_delay,
 			}
