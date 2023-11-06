@@ -14,7 +14,7 @@ import (
 	"github.com/whatsauth/ws"
 )
 
-func WebHookPost(w http.ResponseWriter, r *http.Request) {
+func Post(w http.ResponseWriter, r *http.Request) {
 	var WAKeyword = "wh4t5auth0"
 	var msg model.IteungMessage
 	var resp atmessage.Response

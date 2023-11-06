@@ -5,5 +5,5 @@ import (
 )
 
 func init() {
-	functions.HTTP("WebHook", WebHookPost)
+	functions.HTTP("WebHook", Post)
 }
