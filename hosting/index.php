@@ -1,7 +1,7 @@
 <?php
 // Define your secret token here
-define('SECRET_TOKEN', 'secrettokenkakak');
-define('TOKEN', 'v4.public.saoid98j98uj89m8j');
+define('SECRET_TOKEN', 'secretwebhookkakak');
+define('TOKEN', 'v4.publik.yiug');
 
 // Check if the request method is POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // JSON encode the data.
             $jsonData = json_encode($msg);
             // The URL to send the POST request to.
-            $url = 'https://cloud.wa.my.id/api/send/message/text';
+            $url = 'https://api.wa.my.id/api/send/message/text';
             // Initialize cURL session.
             $ch = curl_init($url);
             // Set cURL options.
