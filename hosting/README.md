@@ -6,7 +6,9 @@ Cara pengecekan bisa lewat SSH dari hosting, contoh jika hosting memblokir alama
 ![image](https://github.com/whatsauth/webhook/assets/11188109/6c58afed-d8aa-4fa6-a1d4-a35a27ed7e6c)  
 atau bisa juga ketika melakukan test menggunakan postman ke webhook di hosting, akan terasa lama dan muncul keterangan seperti ini:  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/17676d2d-b1b3-4b54-ad99-4c9637f8b6fa)  
-Cara mensiasatinya adalah dengan mengganti alamat domain api.wa.my.id dengan cloud.wa.my.id
+Cara mensiasatinya adalah dengan mengganti alamat domain api.wa.my.id dengan cloud.wa.my.id  
+![image](https://github.com/whatsauth/webhook/assets/11188109/c68faf84-4c1b-46f0-b4f6-e891eada3c14)
+
 
 ## Langkah langkah
 Buka Cpanel dan masuk ke File Manager buat folder baru bernama webhook di dalam public_html  
