@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // JSON encode the data.
             $jsonData = json_encode($msg);
             // The URL to send the POST request to.
-            $url = 'https://api.wa.my.id/api/send/message/text';
+            $url = 'https://cloud.wa.my.id/api/send/message/text';
             // Initialize cURL session.
             $ch = curl_init($url);
             // Set cURL options.
