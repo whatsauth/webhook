@@ -2,6 +2,10 @@
 // Define your secret token here
 define('SECRET_TOKEN', 'secretwebhookkakak');
 define('TOKEN', 'v4.publik.yiug');
+//define('URLSENDMESSAGE', 'https://api.wa.my.id/api/send/message/text');
+// jika domain yang atas di blokir gunakan domain yang bawah
+define('URLSENDMESSAGE', 'https://cloud.wa.my.id/api/send/message/text');
+
 
 // Check if the request method is POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -31,7 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // JSON encode the data.
             $jsonData = json_encode($msg);
             // The URL to send the POST request to.
-            $url = 'https://api.wa.my.id/api/send/message/text';
+            $url=URLSENDMESSAGE
+            //$url = 'https://api.wa.my.id/api/send/message/text';
             // jika domain yang atas di blokir gunakan domain yang bawah
             //$url = 'https://cloud.wa.my.id/api/send/message/text';
             // Initialize cURL session.
