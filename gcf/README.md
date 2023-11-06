@@ -24,6 +24,7 @@ type WAMessage struct {
 ```
 [Contoh Source Code WebHook](./gcf/function.go)
 
+
 ## Langkah-langkah pembuatan GCP
 Pastikan sudah setting environment variabel pada GCF antara lain :
 1. SECRET : sebagai pengaman endpoint GCF webhook yang di tembak dari whatsauth
@@ -33,8 +34,7 @@ Pastikan sudah setting environment variabel pada GCF antara lain :
 4. Masukkan variabel environtment SECRET dan TOKEN  
    ![image](https://github.com/whatsauth/webhook/assets/11188109/5ce519e9-c9ee-45aa-ad58-edd14a4c661d)
 5. Pastikan Entry Point sama dengan yang ada di init  
-   ![image](https://github.com/whatsauth/webhook/assets/11188109/21323f05-d32e-4fc8-91ba-7933644152ea)
-
+   ![image](https://github.com/whatsauth/webhook/assets/11188109/fd30ddad-eca0-452a-8e1d-d7038401f7e6)
 
 ## Release Package
 ```sh
