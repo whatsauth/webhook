@@ -1,40 +1,31 @@
 # Webhook Layanan WhatsAuth
 WebHook Menggunakan method HTTP POST dengan Header bernama Secret  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/7734295e-89bb-4b05-ab05-d2ee0bdb6019)  
-Format JSON yang dikirim ke WebHook :
+Format JSON dalam body yang dikirim ke WebHook :
 ```go
-type WAMessage struct {
-	Phone_number       string  `json:"phone_number,omitempty" bson:"phone_number,omitempty"`
-	Reply_phone_number string  `json:"reply_phone_number,omitempty" bson:"reply_phone_number,omitempty"`
-	Chat_number        string  `json:"chat_number,omitempty" bson:"chat_number,omitempty"`
-	Chat_server        string  `json:"chat_server,omitempty" bson:"chat_server,omitempty"`
-	Group_name         string  `json:"group_name,omitempty" bson:"group_name,omitempty"`
-	Group_id           string  `json:"group_id,omitempty" bson:"group_id,omitempty"`
-	Group              string  `json:"group,omitempty" bson:"group,omitempty"`
-	Alias_name         string  `json:"alias_name,omitempty" bson:"alias_name,omitempty"`
-	Message            string  `json:"messages,omitempty" bson:"messages,omitempty"`
-	From_link          bool    `json:"from_link,omitempty" bson:"from_link,omitempty"`
-	From_link_delay    uint32  `json:"from_link_delay,omitempty" bson:"from_link_delay,omitempty"`
-	Is_group           bool    `json:"is_group,omitempty" bson:"is_group,omitempty"`
-	Filename           string  `json:"filename,omitempty" bson:"filename,omitempty"`
-	Filedata           string  `json:"filedata,omitempty" bson:"filedata,omitempty"`
-	Latitude           float64 `json:"latitude,omitempty" bson:"latitude,omitempty"`
-	Longitude          float64 `json:"longitude,omitempty" bson:"longitude,omitempty"`
+{
+  "phone_number": "1234567890",
+  "reply_phone_number": "0987654321",
+  "chat_number": "1122334455",
+  "chat_server": "server1.chat.example",
+  "group_name": "Example Group",
+  "group_id": "G-123456",
+  "group": "yes",
+  "alias_name": "JohnDoe",
+  "messages": "This is a test message",
+  "from_link": true,
+  "from_link_delay": 30,
+  "is_group": true,
+  "filename": "document.pdf",
+  "filedata": "base64EncodedString",
+  "latitude": 37.7749,
+  "longitude": -122.4194
 }
+
 ```
-[Contoh Source Code WebHook](./gcf/function.go)
-
-## Langkah-langkah pembuatan GCP
-Pastikan sudah setting environment variabel pada GCF antara lain :
-1. SECRET : sebagai pengaman endpoint GCF webhook yang di tembak dari whatsauth
-2. TOKEN : token yang digunakan untuk menggunakan API WhatsAuth
-3. Buat Cloud Function dan pilih server jakarta indonesia  
-   ![image](https://github.com/whatsauth/webhook/assets/11188109/ad72a002-b318-4475-8c85-94b266aaa4a5)
-4. Masukkan variabel environtment SECRET dan TOKEN  
-   ![image](https://github.com/whatsauth/webhook/assets/11188109/5ce519e9-c9ee-45aa-ad58-edd14a4c661d)
-5. Pastikan Entry Point sama dengan yang ada di init  
-   ![image](https://github.com/whatsauth/webhook/assets/11188109/21323f05-d32e-4fc8-91ba-7933644152ea)
-
+Contoh Source Code WebHook:
+1. [Untuk Go di Google Cloud Funtion](./gcf/function.go)
+2. [Untuk PHP di Web Hosting](./hosting/index.php)
 
 ## Release Package
 ```sh
