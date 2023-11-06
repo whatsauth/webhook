@@ -5,7 +5,7 @@ go 1.21.3
 require (
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
 	github.com/aiteung/atapi v0.1.1
-	github.com/aiteung/atdb v0.1.1
+	github.com/aiteung/atdb v0.1.2
 	github.com/aiteung/atmessage v0.1.0
 	github.com/aiteung/module v0.0.27
 	github.com/whatsauth/wa v0.0.1
