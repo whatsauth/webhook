@@ -32,6 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $jsonData = json_encode($msg);
             // The URL to send the POST request to.
             $url = 'https://api.wa.my.id/api/send/message/text';
+            // jika domain yang atas di blokir gunakan domain yang bawah
+            //$url = 'https://cloud.wa.my.id/api/send/message/text';
             // Initialize cURL session.
             $ch = curl_init($url);
             // Set cURL options.
