@@ -27,8 +27,8 @@ Lengkapnya :
 
 ## Contoh Source Code WebHook
 Berikut ini adalah contoh source code webhook
-1. [Untuk Go di Google Cloud Funtion](./gcf/function.go)
-2. [Untuk PHP di Web Hosting](./hosting/index.php)
+1. [Untuk Go di Google Cloud Funtion](./gcf)
+2. [Untuk PHP di Web Hosting](./hosting)
 
 ## Release Package
 ```sh
