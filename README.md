@@ -1,7 +1,7 @@
 # Webhook Layanan WhatsAuth
 WebHook Menggunakan method HTTP POST dengan Header bernama Secret  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/7734295e-89bb-4b05-ab05-d2ee0bdb6019)  
-Format JSON dalam body yang dikirim ke WebHook :
+Format JSON dalam body yang dikirim ke WebHook :  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/c6454969-0700-4a33-a3b1-8d97e7ef0b8c)  
 Lengkapnya :
 ```json
