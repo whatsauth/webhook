@@ -5,7 +5,8 @@ Hal yang pertama dilakukan adalah, pastikan hosting anda tidak memblokir domain 
 Cara pengecekan bisa lewat SSH dari hosting, contoh jika hosting memblokir alamat api wa maka akan seperti ini:  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/6c58afed-d8aa-4fa6-a1d4-a35a27ed7e6c)  
 atau bisa juga ketika melakukan test menggunakan postman ke webhook di hosting, akan terasa lama dan muncul keterangan seperti ini:  
-![image](https://github.com/whatsauth/webhook/assets/11188109/17676d2d-b1b3-4b54-ad99-4c9637f8b6fa)
+![image](https://github.com/whatsauth/webhook/assets/11188109/17676d2d-b1b3-4b54-ad99-4c9637f8b6fa)  
+Cara mensiasatinya adalah dengan mengganti alamat domain api.wa.my.id dengan cloud.wa.my.id
 
 ## Langkah langkah
 Buka Cpanel dan masuk ke File Manager buat folder baru bernama webhook di dalam public_html  
