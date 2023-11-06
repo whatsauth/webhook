@@ -13,7 +13,7 @@ func TestGetENVToken(t *testing.T) {
 }
 
 func TestUpdateGetData(t *testing.T) {
-	rply, err := atdb.GetRandomDoc[[]Reply](Mongoconn, "reply", 1)
+	rply, err := atdb.GetRandomDoc[Reply](Mongoconn, "reply", 1)
 	fmt.Println(err)
 	fmt.Println(rply)
 }
