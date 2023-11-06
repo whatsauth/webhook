@@ -8,7 +8,7 @@ import (
 
 var DBmongoinfo = atdb.DBInfo{
 	DBString: os.Getenv("MONGOSTRING"),
-	DBName:   "potp",
+	DBName:   "waapi",
 }
 
 var Mongoconn = atdb.MongoConnect(DBmongoinfo)
