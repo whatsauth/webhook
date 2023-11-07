@@ -16,11 +16,12 @@ Pada bagian domain klik Create A New Domain
 ![image](https://github.com/whatsauth/webhook/assets/11188109/caa18396-006b-4de7-838c-c4400bdafc82)  
 Masukkan nama domain atau subdomain yang sudah terdaftar di cloudflare  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/be2ab7f8-983d-414b-b7e6-513e01c45581)  
+Berhasil terlihat Root Dokumen domain sama antara domain hosting dengan domain yang terdaftar cloudflare  
+![image](https://github.com/whatsauth/webhook/assets/11188109/00b8e20c-e720-4e1c-9a08-e8705a5a78e5)  
 Sekarang masuk ke Dashboard Cloudflare, pilih domain yang tadi di daftarkan masuk ke menu DNS aktifkan awan kuning nya  
-
-Tapi tetap saja, tidak bisa menikmati fitur webhook hanya bisa kirim pesan. Tidak bisa menerima.
-Lebih baik langsung kontak saja support penyedia jasa hosting, untuk membuka blokir IP api.wa.my.id
-
+![image](https://github.com/whatsauth/webhook/assets/11188109/3a4a32a6-46da-41ae-b470-633218d4f97c)  
+Selanjutnya tinggal pakai URL webhook dari nama domain yang ada di cloudflare, dari yang sebelumnya yusrilhelmi.net/webhook menjadi yusril.vas.web.id/webhook.
+Atau Lebih baik langsung kontak saja support penyedia jasa hosting, untuk membuka blokir IP dari dan ke api.wa.my.id
 
 ## Langkah langkah
 Buka Cpanel dan masuk ke File Manager buat folder baru bernama webhook di dalam public_html  
