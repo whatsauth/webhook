@@ -13,7 +13,10 @@ Cara mensiasatinya adalah dengan mengganti alamat domain api.wa.my.id dengan clo
 ![image](https://github.com/whatsauth/webhook/assets/11188109/8ac887db-c376-4c0b-a1a1-26c3f966b47c)
 Agar alamat webhook di hosting juga bisa diakses oleh server whatsauth maka buatlah subdomain yang terdaftar di Cloudflare.
 Pada bagian domain klik Create A New Domain  
-![image](https://github.com/whatsauth/webhook/assets/11188109/caa18396-006b-4de7-838c-c4400bdafc82)
+![image](https://github.com/whatsauth/webhook/assets/11188109/caa18396-006b-4de7-838c-c4400bdafc82)  
+Masukkan nama domain atau subdomain yang sudah terdaftar di cloudflare  
+![image](https://github.com/whatsauth/webhook/assets/11188109/be2ab7f8-983d-414b-b7e6-513e01c45581)  
+Sekarang masuk ke Dashboard Cloudflare, pilih domain yang tadi di daftarkan masuk ke menu DNS aktifkan awan kuning nya  
 
 Tapi tetap saja, tidak bisa menikmati fitur webhook hanya bisa kirim pesan. Tidak bisa menerima.
 Lebih baik langsung kontak saja support penyedia jasa hosting, untuk membuka blokir IP api.wa.my.id
