@@ -1,7 +1,6 @@
 package webhook
 
 import (
-	"context"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -9,11 +8,11 @@ import (
 	"strings"
 
 	"github.com/aiteung/atapi"
+	"github.com/aiteung/atdb"
 	"github.com/aiteung/atmessage"
 	"github.com/aiteung/module/model"
 	"github.com/whatsauth/wa"
 	"github.com/whatsauth/ws"
-	"go.mongodb.org/mongo-driver/bson"
 )
 
 func Post(w http.ResponseWriter, r *http.Request) {
@@ -57,15 +56,11 @@ func PostWithDB(w http.ResponseWriter, r *http.Request) {
 			}
 			resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/whatsauth/request")
 		} else { //untuk membalas pesan masuk
-			var rply []Reply
-			pipeline := []bson.D{bson.D{{"$sample", bson.D{{"size", 10}}}}}
-			cur, _ := Mongoconn.Collection("reply").Aggregate(context.TODO(), pipeline)
-			defer cur.Close(context.TODO())
-			cur.All(context.TODO(), &rply)
+			rply, _ := atdb.GetRandomDoc[Reply](Mongoconn, "reply", 1)
 			dt := &wa.TextMessage{
 				To:       msg.Phone_number,
 				IsGroup:  false,
-				Messages: strings.ReplaceAll(rply[0].Message, "#BOTNAME#", "iteung"),
+				Messages: strings.ReplaceAll(rply[0].Message, "#BOTNAME#", msg.Alias_name),
 			}
 			resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/send/message/text")
 		}

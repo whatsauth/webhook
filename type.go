@@ -1,5 +1,5 @@
 package webhook
 
 type Reply struct {
-	Message string `bson:"message"`
+	Message string `bson:"messsage"`
 }

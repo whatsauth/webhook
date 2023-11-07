@@ -7,7 +7,7 @@ import (
 )
 
 var DBmongoinfo = atdb.DBInfo{
-	DBString: os.Getenv("MONGOSTRINGAWANGGA"),
+	DBString: os.Getenv("MONGOSTRING"),
 	DBName:   "waapi",
 }
 

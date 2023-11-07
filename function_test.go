@@ -3,6 +3,7 @@ package webhook
 import (
 	"fmt"
 	"os"
+	"strings"
 	"testing"
 
 	"github.com/aiteung/atdb"
@@ -13,7 +14,9 @@ func TestGetENVToken(t *testing.T) {
 }
 
 func TestUpdateGetData(t *testing.T) {
-	rply, err := atdb.GetRandomDoc[Reply](Mongoconn, "reply", 1)
-	fmt.Println(err)
-	fmt.Println(rply)
+	result, err := atdb.GetRandomDoc[Reply](Mongoconn, "reply", 1)
+	if err != nil {
+		t.Error(err)
+	}
+	fmt.Printf("%+v\n", strings.ReplaceAll(result[0].Message, "#BOTNAME#", "aku"))
 }
