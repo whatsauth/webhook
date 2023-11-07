@@ -1,13 +1,20 @@
 # PHP Hosting
 
 Untuk yang menggunakan PHP di web hosting bisa memakai contoh kode [berikut](index.php).
+
+## Pengecekan Blacklist IP dari Hosting
 Hal yang pertama dilakukan adalah, pastikan hosting anda tidak memblokir domain atau ip dari alamat api.wa.my.id
 Cara pengecekan bisa lewat SSH dari hosting, contoh jika hosting memblokir alamat api wa maka akan seperti ini:  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/6c58afed-d8aa-4fa6-a1d4-a35a27ed7e6c)  
 atau bisa juga ketika melakukan test menggunakan postman ke webhook di hosting, akan terasa lama dan muncul keterangan seperti ini:  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/17676d2d-b1b3-4b54-ad99-4c9637f8b6fa)  
+
 Cara mensiasatinya adalah dengan mengganti alamat domain api.wa.my.id dengan cloud.wa.my.id  
-![image](https://github.com/whatsauth/webhook/assets/11188109/c68faf84-4c1b-46f0-b4f6-e891eada3c14)  
+![image](https://github.com/whatsauth/webhook/assets/11188109/8ac887db-c376-4c0b-a1a1-26c3f966b47c)
+Agar alamat webhook di hosting juga bisa diakses oleh server whatsauth maka buatlah subdomain yang terdaftar di Cloudflare.
+Pada bagian domain klik Create A New Domain  
+![image](https://github.com/whatsauth/webhook/assets/11188109/caa18396-006b-4de7-838c-c4400bdafc82)
+
 Tapi tetap saja, tidak bisa menikmati fitur webhook hanya bisa kirim pesan. Tidak bisa menerima.
 Lebih baik langsung kontak saja support penyedia jasa hosting, untuk membuka blokir IP api.wa.my.id
 
