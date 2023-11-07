@@ -57,10 +57,12 @@ func PostWithDB(w http.ResponseWriter, r *http.Request) {
 			resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/whatsauth/request")
 		} else { //untuk membalas pesan masuk
 			rply, _ := atdb.GetRandomDoc[Reply](Mongoconn, "reply", 1)
+			replymsg := strings.ReplaceAll(rply[0].Message, "#BOTNAME#", msg.Alias_name)
+			replymsg = strings.ReplaceAll(replymsg, "\\n", "\n")
 			dt := &wa.TextMessage{
 				To:       msg.Phone_number,
 				IsGroup:  false,
-				Messages: strings.ReplaceAll(rply[0].Message, "#BOTNAME#", msg.Alias_name),
+				Messages: replymsg,
 			}
 			resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/send/message/text")
 		}
