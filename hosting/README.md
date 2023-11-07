@@ -20,7 +20,8 @@ Berhasil terlihat Root Dokumen domain sama antara domain hosting dengan domain y
 ![image](https://github.com/whatsauth/webhook/assets/11188109/00b8e20c-e720-4e1c-9a08-e8705a5a78e5)  
 Sekarang masuk ke Dashboard Cloudflare, pilih domain yang tadi di daftarkan masuk ke menu DNS aktifkan awan kuning nya  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/3a4a32a6-46da-41ae-b470-633218d4f97c)  
-Selanjutnya tinggal pakai URL webhook dari nama domain yang ada di cloudflare, dari yang sebelumnya yusrilhelmi.net/webhook menjadi yusril.vas.web.id/webhook.
+Selanjutnya tinggal pakai URL webhook dari nama domain yang ada di cloudflare, dari yang sebelumnya yusrilhelmi.net/webhook menjadi yusril.vas.web.id/webhook.  
+![image](https://github.com/whatsauth/webhook/assets/11188109/77748fec-0039-44cf-a46d-a2b2d448cf68)  
 Atau Lebih baik langsung kontak saja support penyedia jasa hosting, untuk membuka blokir IP dari dan ke api.wa.my.id
 
 ## Langkah langkah
