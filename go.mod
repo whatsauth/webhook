@@ -7,6 +7,7 @@ require (
 	github.com/aiteung/atapi v0.1.1
 	github.com/aiteung/atmessage v0.1.0
 	github.com/aiteung/module v0.0.27
+	github.com/gofiber/fiber/v2 v2.50.0
 	github.com/whatsauth/wa v0.0.1
 	github.com/whatsauth/ws v0.0.2
 )
@@ -22,7 +23,6 @@ require (
 	github.com/cloudevents/sdk-go/v2 v2.14.0 // indirect
 	github.com/fasthttp/websocket v1.5.6 // indirect
 	github.com/go-sql-driver/mysql v1.7.1 // indirect
-	github.com/gofiber/fiber/v2 v2.50.0 // indirect
 	github.com/gofiber/websocket/v2 v2.2.1 // indirect
 	github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9 // indirect
 	github.com/golang-sql/sqlexp v0.1.0 // indirect
