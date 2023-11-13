@@ -31,7 +31,7 @@ Pastikan sudah setting environment variabel pada GCF antara lain :
 2. TOKEN : token yang digunakan untuk menggunakan API WhatsAuth
 3. Buat Cloud Function dan pilih server jakarta indonesia  
    ![image](https://github.com/whatsauth/webhook/assets/11188109/ad72a002-b318-4475-8c85-94b266aaa4a5)
-4. Masukkan variabel environtment SECRET dan TOKEN. Harap diingat ini case sensitif pastikan huruf besar semua.  
+4. Masukkan variabel environtment SECRET dan TOKEN. Harap diingat ini case sensitif pastikan huruf besar semua untuk Name dari variabel.  
    ![image](https://github.com/whatsauth/webhook/assets/11188109/5ce519e9-c9ee-45aa-ad58-edd14a4c661d)
 5. Pastikan Entry Point sama dengan yang ada di init  
    ![image](https://github.com/whatsauth/webhook/assets/11188109/fd30ddad-eca0-452a-8e1d-d7038401f7e6)
