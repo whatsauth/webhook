@@ -35,7 +35,10 @@ func Post(w http.ResponseWriter, r *http.Request) {
 			if msg.Chat_server == "g.us" { //jika pesan datang dari group maka balas ke group
 				dt.IsGroup = true
 			}
-			resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/send/message/text")
+			if msg.Phone_number != "628112000279" { //ignore pesan datang dari iteung
+				resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/send/message/text")
+			}
+
 		}
 	} else {
 		resp.Response = "Secret Salah"
