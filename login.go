@@ -1,8 +1,6 @@
 package webhook
 
 import (
-	"os"
-
 	"github.com/aiteung/atapi"
 	"github.com/aiteung/atmessage"
 	"github.com/aiteung/module/model"
@@ -15,6 +13,6 @@ func HandlerQRLogin(msg model.IteungMessage, WAKeyword string) (resp atmessage.R
 		Phonenumber: msg.Phone_number,
 		Delay:       msg.From_link_delay,
 	}
-	resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/whatsauth/request")
+	resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", WAAPIToken, dt, "https://api.wa.my.id/api/whatsauth/request")
 	return
 }

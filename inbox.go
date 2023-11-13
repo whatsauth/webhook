@@ -1,8 +1,6 @@
 package webhook
 
 import (
-	"os"
-
 	"github.com/aiteung/atapi"
 	"github.com/aiteung/atmessage"
 	"github.com/aiteung/module/model"
@@ -19,7 +17,7 @@ func HandlerIncomingMessage(msg model.IteungMessage) (resp atmessage.Response) {
 		dt.IsGroup = true
 	}
 	if msg.Phone_number != "628112000279" { //ignore pesan datang dari iteung
-		resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/send/message/text")
+		resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", WAAPIToken, dt, "https://api.wa.my.id/api/send/message/text")
 	}
 	return
 }
