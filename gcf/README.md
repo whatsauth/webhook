@@ -22,7 +22,7 @@ type WAMessage struct {
 	Longitude          float64 `json:"longitude,omitempty" bson:"longitude,omitempty"`
 }
 ```
-[Contoh Source Code WebHook](./gcf/function.go)
+[Contoh Source Code WebHook](./function.go)
 
 
 ## Langkah-langkah pembuatan GCP
