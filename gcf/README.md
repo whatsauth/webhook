@@ -35,6 +35,11 @@ Pastikan sudah setting environment variabel pada GCF antara lain :
    ![image](https://github.com/whatsauth/webhook/assets/11188109/5ce519e9-c9ee-45aa-ad58-edd14a4c661d)
 5. Pastikan Entry Point sama dengan yang ada di init  
    ![image](https://github.com/whatsauth/webhook/assets/11188109/fd30ddad-eca0-452a-8e1d-d7038401f7e6)
+6. Agar API bisa diakses Publik Berikan Akses Publik dari Menu Cloud Run dan Tambahkan permission sebagai berikut:  
+   New Principals : AllUsers  
+   Role : Cloud Run Invoker  
+   ![image](https://github.com/petapedia/gcf/assets/11188109/45b84091-3e42-4124-9264-ae86e08d49b3)  
+
 
 ## Release Package
 ```sh
