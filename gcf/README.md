@@ -20,6 +20,7 @@ type WAMessage struct {
 	Filedata           string  `json:"filedata,omitempty" bson:"filedata,omitempty"`
 	Latitude           float64 `json:"latitude,omitempty" bson:"latitude,omitempty"`
 	Longitude          float64 `json:"longitude,omitempty" bson:"longitude,omitempty"`
+	LiveLoc            bool    `json:"liveloc,omitempty" bson:"liveloc,omitempty"`
 }
 ```
 [Contoh Source Code WebHook](./function.go)
