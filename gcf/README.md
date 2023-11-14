@@ -1,7 +1,7 @@
 # Webhook Layanan WhatsAuth
 WebHook Menggunakan method HTTP POST dengan Header bernama Secret  
 ![image](https://github.com/whatsauth/webhook/assets/11188109/7734295e-89bb-4b05-ab05-d2ee0bdb6019)  
-Format JSON yang dikirim ke WebHook :
+Format JSON yang dikirim ke WebHook menggunakan struct [IteungMessage](https://github.com/aiteung/module/blob/11c330c30b86f7e7c04bf3d60f04b928c90fd6dc/model/main.go#L23) :
 ```go
 type WAMessage struct {
 	Phone_number       string  `json:"phone_number,omitempty" bson:"phone_number,omitempty"`
