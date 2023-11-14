@@ -7,6 +7,5 @@ import (
 )
 
 func init() {
-	//functions.HTTP("WebHook", webhook.Post)
 	functions.HTTP("WebHook", adaptor.FiberHandlerFunc(webhook.PostMessage))
 }
