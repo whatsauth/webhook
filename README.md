@@ -27,16 +27,9 @@ Lengkapnya :
 ```
 
 ## Contoh Source Code WebHook
-Berikut ini adalah contoh source code webhook
-1. [Untuk Go di Google Cloud Funtion](https://github.com/whatsauth/webhook/tree/main/gcf)
-2. [Untuk PHP di Web Hosting](https://github.com/whatsauth/webhook/tree/main/hosting)
+Pilih salah satu contoh source code webhook untuk di deploy:
+1. [Golang menggunakan free plan di AlwaysData.com](https://github.com/gocroot/alwaysdata/)
+2. [Untuk Go di Google Cloud Funtion](https://github.com/whatsauth/webhook/tree/main/gcf)
+3. [Untuk PHP di Web Hosting](https://github.com/whatsauth/webhook/tree/main/hosting)
 
-## Release Package
-```sh
-go get -u all					#update existing package
-go mod tidy					#generate go mod
-git tag                                 	#check current version
-git tag v0.0.3                          	#set tag version
-git push origin --tags                  	#push tag version to repo
-go list -m github.com/whatsauth/webhook@v0.0.3   #publish to pkg dev, replace ORG/URL with your repo URL
-```
+
