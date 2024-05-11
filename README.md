@@ -29,7 +29,8 @@ Lengkapnya :
 ## Contoh Source Code WebHook
 Pilih salah satu contoh source code webhook untuk di deploy:
 1. [Golang menggunakan free plan di AlwaysData.com](https://github.com/gocroot/alwaysdata/)
-2. [Untuk Go di Google Cloud Funtion](https://github.com/whatsauth/webhook/tree/main/gcf)
-3. [Untuk PHP di Web Hosting](https://github.com/whatsauth/webhook/tree/main/hosting)
+2. [Golang menggunakan AWS Lambda](https://github.com/gocroot/aws)
+3. [Untuk Go di Google Cloud Funtion](https://github.com/whatsauth/webhook/tree/main/gcf)
+4. [Untuk PHP di Web Hosting](https://github.com/whatsauth/webhook/tree/main/hosting)
 
 
