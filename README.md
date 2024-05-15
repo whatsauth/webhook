@@ -25,6 +25,7 @@ Lengkapnya :
   "liveloc": true
 }
 ```
+Jika anda mengunakan Postman, bisa import [file json whatsauth](https://whatsauth.my.id/webhook/WhatsAuth.postman_collection.json)
 
 ## Contoh Source Code WebHook
 Pilih salah satu contoh source code webhook untuk di deploy:
