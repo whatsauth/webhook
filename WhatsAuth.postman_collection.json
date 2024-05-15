@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "d6e32e42-29e7-4323-8ebb-e7eff8024d0d",
+		"name": "WhatsAuth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "794979"
+	},
+	"item": [
+		{
+			"name": "https://asia-southeast1-project_id.cloudfunctions.net/gocroot",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Secret",
+						"value": "32eref4598ew97ewr87439yr9743o8e87r"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"phone_number\": \"6281312000300\",\r\n  \"reply_phone_number\": \"6281312000300\",\r\n  \"chat_number\": \"6281312000300\",\r\n  \"chat_server\": \"server1.chat.example\",\r\n  \"group_name\": \"Example Group\",\r\n  \"group_id\": \"G-123456\",\r\n  \"group\": \"yes\",\r\n  \"alias_name\": \"JohnDoe\",\r\n  \"messages\": \"This is a test message\",\r\n  \"from_link\": true,\r\n  \"from_link_delay\": 30,\r\n  \"is_group\": true,\r\n  \"filename\": \"document.pdf\",\r\n  \"filedata\": \"base64EncodedString\",\r\n  \"latitude\": 37.7749,\r\n  \"longitude\": -122.4194,\r\n  \"liveloc\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast1-project_id.cloudfunctions.net/gocroot/webhook/inbox",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-project_id",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"gocroot",
+						"webhook",
+						"inbox"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://asia-southeast1-project_id.cloudfunctions.net/gocroot/koplok/jancuk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://asia-southeast1-project_id.cloudfunctions.net/gocroot/refresh/token",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-project_id",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"gocroot",
+						"refresh",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://asia-southeast1-project_id.cloudfunctions.net/gocroot/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://asia-southeast1-project_id.cloudfunctions.net/gocroot/",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-project_id",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"gocroot",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
