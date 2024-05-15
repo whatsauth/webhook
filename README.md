@@ -6,13 +6,13 @@ Format JSON dalam body yang dikirim ke WebHook :
 Lengkapnya :
 ```json
 {
-  "phone_number": "1234567890",
-  "reply_phone_number": "0987654321",
-  "chat_number": "1122334455",
-  "chat_server": "server1.chat.example",
+  "phone_number": "6281112000300",
+  "reply_phone_number": "6281112000300",
+  "chat_number": "6281112000300",
+  "chat_server": "s.whatsapp.net",
   "group_name": "Example Group",
   "group_id": "G-123456",
-  "group": "yes",
+  "group": "no",
   "alias_name": "JohnDoe",
   "messages": "This is a test message",
   "from_link": true,
@@ -30,7 +30,7 @@ Lengkapnya :
 Pilih salah satu contoh source code webhook untuk di deploy:
 1. [Golang menggunakan free plan di AlwaysData.com](https://github.com/gocroot/alwaysdata/)
 2. [Golang menggunakan AWS Lambda](https://github.com/gocroot/aws)
-3. [Untuk Go di Google Cloud Funtion](https://github.com/gocroot/gcp)
+3. [Golang menggunakan Google Cloud Funtion](https://github.com/gocroot/gcp)
 4. [Untuk PHP di Web Hosting](https://github.com/whatsauth/webhook/tree/main/hosting)
 
 
